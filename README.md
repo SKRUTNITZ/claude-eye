@@ -15,30 +15,38 @@ Turn on the eye, point at anything (a website, an app, a design, a chart) and sa
 
 ## Features
 
-- **👁️ Screen sharing toggle.** When it's on, every message includes a screenshot of each of your displays.
-  The overlay turns invisible for a moment so it isn't in the picture.
-- **✂️ Snip.** Drag a box around just part of the screen (or press Space to pick a window). The snip is attached
-  to your next message instead of the whole screen.
-- **Live replies.** Answers stream in as Claude writes, with a status line ("Looking at your screen…", "Writing code…").
-- **🎙 Voice.** Click the mic, talk, click again to send. Turn on 🔊 to have answers read aloud
-  (in the language they're written in), or hover a reply and click *Read aloud*.
-- **🔔 Notifications** when an answer is ready while Claude Eye is hidden or in the background.
-- **💾 Chat history.** Chats are saved and your last one comes back when you reopen the app. 🕘 lists older chats;
-  picking one continues that conversation with Claude.
-- **📁 Project folder.** Claude works inside the folder you pick and can create and edit files there,
-  so "build what I'm showing you" goes straight into your project.
-- **🧠 Business mode.** Turns Claude into a practical business coach: money-making ideas for apps, websites and
-  real-world businesses, with costs, first steps and risks.
-- **💰 Trading mode.** Reads the TradingView chart on your screen right away: trend, indicators (including
-  Market Cipher B waves, dots and money flow), divergences, wait/entry/exit signals and key levels. 🔄 re-reads it.
-  With the TradingView desktop app, it captures the TradingView window directly, even if other windows cover it.
-- **⏱ Auto-watch.** In Trading mode, re-reads the chart every 5 or 15 minutes and sends a notification when the
-  bias or signal changes (for example *Wait → Possible long*).
-- **🌍 Global chat.** A live, anonymous chat room with everyone who has Claude Eye open and 🌍 turned on.
-  You get a random name like *Anon-4821*, and a green bar shows how many people are online now.
-  Right-click a message to mute that person.
-- **Stays on top** of other windows (📌 to turn off), on every Space and over full-screen apps.
-- **⌃⌥Space** shows or hides it from anywhere.
+### 👀 Show Claude your screen
+
+| | |
+|---|---|
+| 👁️ **Screen sharing** | Turn it on and Claude sees your screen with every message |
+| ✂️ **Snip** | Drag a box to show just one part of the screen |
+| 📁 **Project folder** | Say *"build what I'm showing you"* and Claude makes it in your project |
+
+### 💬 Chat your way
+
+| | |
+|---|---|
+| 🎙 **Voice** | Talk instead of typing. 🔊 reads answers out loud |
+| 💾 **History** | Your chats are saved. 🕘 opens older ones |
+| 🔔 **Notifications** | Get pinged when an answer is ready |
+
+### 🎯 Special modes
+
+| | |
+|---|---|
+| 🧠 **Business** | Money-making ideas with costs, first steps and risks |
+| 💰 **Trading** | Reads your TradingView chart: trend, indicators (incl. Market Cipher B) and signals |
+| ⏱ **Auto-watch** | Re-checks the chart every 5 or 15 min and alerts you when the signal changes |
+
+### 🌍 Global chat
+
+Talk live and anonymously with everyone who has Claude Eye open.
+You get a random name like *Anon-4821*, and a green bar shows how many people are online.
+
+### ⚡ Always handy
+
+Floats on top of every window. Press **⌃⌥Space** to show or hide it from anywhere.
 
 ## Requirements
 
