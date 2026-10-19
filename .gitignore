@@ -1,0 +1,13 @@
+# Build output
+build/
+*.app
+
+# Signing material must never be committed
+signing/
+*.p12
+*.pem
+*.key
+*.cer
+
+# macOS
+.DS_Store
