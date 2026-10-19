@@ -1068,6 +1068,24 @@ final class GlobalChat: ObservableObject {
 
     func mute(_ name: String) { muted.insert(name) }
     func unmuteAll() { muted = [] }
+
+    /// Example room for `--demo --globe` (README screenshot). Nothing is sent or received.
+    func loadDemo() {
+        connected = true
+        let now = Date()
+        seen = Dictionary(uniqueKeysWithValues: (1...11).map { ("demo-\($0)", now) })
+        let chat: [(String, String, Bool)] = [
+            ("Anon-2317", "Hi everyone 👋 just installed Claude Eye", false),
+            ("Anon-8840", "Welcome! Try 👁️ and ask it to fix whatever is on your screen, it's wild", false),
+            ("Anon-4894", "Hey! What are you all building today?", true),
+            ("Anon-2317", "A website for my mom's bakery 🍰", false),
+            ("Anon-5102", "Trading bot dashboard here 📈", false),
+            ("Anon-8840", "Nice, post a link when it's live!", false),
+        ]
+        messages = chat.enumerated().map { i, m in
+            GlobalMessage(id: "demo-\(i)", name: m.0, text: m.1, time: now.addingTimeInterval(Double(i - chat.count) * 50), mine: m.2)
+        }
+    }
 }
 
 // MARK: - Views
@@ -1599,8 +1617,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         if !demoMode, let i = args.firstIndex(of: "--mode"), i + 1 < args.count, let m = Mode(rawValue: args[i + 1]), m != .normal {
             model.toggleMode(m)
         }
-        // `--globe` opens straight into the 🌍 chat.
-        if !demoMode && args.contains("--globe") { model.toggleGlobe() }
+        // `--globe` opens straight into the 🌍 chat (with `--demo`, an example room).
+        if args.contains("--globe") {
+            if demoMode {
+                model.mode = .normal
+                model.watch = .off
+                model.eyeOn = false
+                model.globeOn = true
+                model.global.loadDemo()
+            } else {
+                model.toggleGlobe()
+            }
+        }
     }
 
     func showWindow() {

@@ -7,7 +7,11 @@ Turn on the eye, point at anything (a website, an app, a design, a chart) and sa
 > **Unofficial.** Claude Eye is a community project. It is not made by, affiliated with, or endorsed by Anthropic.
 > It runs the `claude` command you already have installed and uses your own Claude Code login.
 
-<p align="center"><img src="docs/screenshot.png" width="460" alt="Claude Eye reading a TradingView chart in Trading mode"></p>
+<p align="center">
+  <img src="docs/screenshot.png" width="400" alt="Claude Eye reading a TradingView chart in Trading mode">
+  <img src="docs/global-chat.png" width="400" alt="The 🌍 global chat: an anonymous room with a green online count">
+</p>
+<p align="center"><sub>Left: 💰 Trading mode reading a chart. Right: the 🌍 global chat (example messages).</sub></p>
 
 ## Features
 
@@ -70,7 +74,8 @@ System Settings → Privacy & Security → Screen & System Audio Recording, then
 | ⌘O | Choose project folder |
 
 Start straight into a mode with `open -a "Claude Eye" --args --mode trading` (or `business`).
-`--args --demo` opens an example chat without saving anything (used for the screenshot above).
+`--args --demo` opens an example chat without saving anything (used for the screenshots above).
+Add `--globe` to show an example 🌍 room instead.
 
 ## Permissions
 
